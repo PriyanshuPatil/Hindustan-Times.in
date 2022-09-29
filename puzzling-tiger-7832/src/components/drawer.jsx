@@ -11,7 +11,8 @@ import {
 import React from 'react';
 // import {} from React ;
 import {Button,Input,useDisclosure} from '@chakra-ui/react';
-function Drawer1() {
+function Drawer1(props) {
+    const {text_drawer}=props;
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = React.useRef()
  let userdata={
@@ -21,8 +22,8 @@ function Drawer1() {
 
   return (
     <>
-      <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
-        Open
+      <Button m={'auto'} mt={'-10px'} pt={'10px'} _hover={{color:"blue.200"}} ref={btnRef} colorScheme='#011e29' background={'#011e29'} onClick={onOpen}>
+       {text_drawer}
       </Button>
       <Drawer
         isOpen={isOpen}
