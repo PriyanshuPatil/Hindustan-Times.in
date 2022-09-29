@@ -2,6 +2,7 @@ import {Box, Container,Image,Grid,Flex,Spacer, Stack} from '@chakra-ui/react'
 import { HamburgerIcon,SearchIcon } from "@chakra-ui/icons";
 import {  } from '@chakra-ui/icons' ;
 import Dateis from './date';
+import Drawer1 from './drawer';
 import {IoGameControllerOutline,IoNewspaper,IoPersonSharp,IoCaretDown} from "react-icons/io5" ;
 function Navbar() {
 
@@ -12,13 +13,13 @@ function Navbar() {
     <Grid templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(3, 1fr)']} fontWeight={'600'} gap={6} width="90%" m={"auto"}>
       <Box  margin='auto' fontSize={['10px','10px','15px','15px']} >
       <Flex gap={'10'}>
-         <Box> 
+         <Box _hover={{color:"blue.200"}}> 
            <Flex gap={'2'}>
             <Box margin={'auto'}><HamburgerIcon></HamburgerIcon></Box>
             <Box>Explore</Box> 
            </Flex>
         </Box>
-       <Box >
+       <Box _hover={{color:"blue.200"}}>
           <Flex gap={'2'}>
             <Box margin={'auto'}><SearchIcon></SearchIcon></Box>
             <Box>Search</Box>
@@ -26,7 +27,7 @@ function Navbar() {
         </Box>
         </Flex>
         <Box display={"flex"} gap="2" mt={'10px'}>
-      <Dateis/>   |   New Delhi 22C
+      <Dateis/>   |   New Delhi 22°C
         </Box>
       </Box>
 
@@ -36,22 +37,22 @@ function Navbar() {
       <Box margin='auto' fontSize={['13px','14px','15px','16px']}>
       <Flex gap={'5'} >
       
-       <Box >
+       <Box _hover={{color:"blue.200"}}>
           <Flex gap={'2'}>
             <Box margin={'auto'}><Box as={IoGameControllerOutline} /></Box>
             <Box>Games</Box>
           </Flex>
         </Box>
-        <Box >
+        <Box _hover={{color:"blue.200"}}>
           <Flex gap={'2'}>
             <Box margin={'auto'}><Box as={IoNewspaper} /></Box>
             <Box>E-Paper</Box>
           </Flex>
         </Box>
         <Box _hover={{color:"blue.200"}} >
-          <Flex gap={'2'}>
+          <Flex gap={'-2'}>
             <Box margin={'auto'}><Box as={IoPersonSharp} /></Box>
-            <Box>My Account</Box>
+            <Drawer1 text_drawer="My Account"/>
             <Box  margin={'auto'}><Box as={IoCaretDown} /></Box>
           </Flex>
         </Box>
