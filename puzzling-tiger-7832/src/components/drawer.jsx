@@ -10,7 +10,7 @@ import {
   } from '@chakra-ui/react' ;
 import React from 'react';
 // import {} from React ;
-import {Button,Input,useDisclosure} from '@chakra-ui/react';
+import {Button,useDisclosure} from '@chakra-ui/react';
 function Drawer1(props) {
     const {text_drawer}=props;
   const { isOpen, onOpen, onClose } = useDisclosure()
