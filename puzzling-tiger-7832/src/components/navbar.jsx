@@ -8,10 +8,10 @@ function Navbar() {
 
   return (
 
-  <Box backgroundColor="#011e29" color='white' padding={5} fontSize={[ 'sm: "80px"','md: "150px"','lg: "700px"']}>
+  <Box  backgroundColor="#011e29" color='white' padding={5} fontSize={[ 'sm: "80px"','md: "150px"','lg: "700px"']} >
    
     <Grid templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(3, 1fr)']} fontWeight={'600'} gap={6} width="90%" m={"auto"}>
-      <Box  margin='auto' fontSize={['10px','10px','15px','15px']} >
+      <Box  margin='auto' fontSize={['10px','10px','15px','15px']}  >
       <Flex gap={'10'}>
          <Box _hover={{color:"blue.200"}}> 
            <Flex gap={'2'}>
