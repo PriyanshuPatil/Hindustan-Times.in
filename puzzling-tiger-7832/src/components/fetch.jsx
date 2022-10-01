@@ -19,6 +19,7 @@ const getData = async (page,query) => {
     const [loading, setLoading] = useState(false);
     const [News, setNews] = useState([]);
     const [page, setPage] = useState(1);
+    
     const [query, setquery] = useState(want);
     useEffect(() => {
       fetchAndUpdateData(page);

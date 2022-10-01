@@ -21,6 +21,7 @@ function AllRoutes() {
           element={
            <SinglePageNews/>
         }
+        
         ></Route>
      
         <Route path="*" element={<PageNotFound />} />

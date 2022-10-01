@@ -15,6 +15,7 @@ function Navbar() {
       <Flex gap={'10'}>
          <Box _hover={{color:"blue.200"}}> 
            <Flex gap={'2'}>
+            
             <Box margin={'auto'}><HamburgerIcon></HamburgerIcon></Box>
             <Box>Explore</Box> 
            </Flex>

@@ -24,7 +24,8 @@ const getData = async (page,query) => {
       fetchAndUpdateData(page);
     }, [page]);
   
-    const fetchAndUpdateData = async (page = 1) => {
+    const fetchAndUpdat
+    eData = async (page = 1) => {
       try {
         setLoading(true);
         const data = await getData(page,query);
