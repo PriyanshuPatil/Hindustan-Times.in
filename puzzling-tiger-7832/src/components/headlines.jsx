@@ -4,7 +4,7 @@ import {useEffect,useState} from 'react';
 const getData = async (page,query) => {
     try {
       let res = await fetch(
-        `https://newsapi.org/v2/everything?q=${query}&from=2022-08-30&sortBy=publishedAt&apiKey=1e91a62a8e6042faa19aa2d4480a8568&pageSize=12&page=${page}`
+        `https://newsapi.org/v2/everything?q=${query}&from=2022-09-01&sortBy=publishedAt&apiKey=2f5aa1b71cd94e81a58f88223aaeccf2&pageSize=12&page=${page}`
       );
       let data = await res.json();
       return data;
