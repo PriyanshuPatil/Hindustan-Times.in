@@ -1,8 +1,6 @@
-# Pro-Flo
 
 ## Description
-Pro-Flo inc. is an American project management application service provider and we have cloned it with the use of various techstacks
-
+This Project Is the Complete Clone Of Hindustan Times,Hindustan Times is one of the leading English language daily newspapers in India, founded in 1924. It is headquartered in New Delhi and has a nationwide circulation. The newspaper covers a wide range of topics, including national and international news, politics, business.
 
 <img src="https://i.postimg.cc/cJ05cwF5/Screenshot-7608.png" alt="img1">
 <img src="https://i.postimg.cc/ZnNRVqqc/Screenshot-7609.png" alt="img2">
